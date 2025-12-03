@@ -1,0 +1,144 @@
+#skill{
+    overflow: hidden;
+    width: 100vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.skilltitle{
+    font-size: 3rem;
+    font-weight: 600;
+    padding-top: 5rem;
+}
+
+.skilldetails{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.skillbars{
+    text-align: left;
+    max-width: 80%;
+    margin: 1.5rem;
+}
+
+.skillbar{
+    display: flex;
+    margin: 1rem;
+    align-items: center;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 1rem;
+    background-color: rgb(50,50,50);
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
+}
+
+.skillbartext h2{
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 40px;
+}
+.skillbartext p{
+    font-size: 1rem;
+    font-weight: 400;
+}
+    
+.skillbarimg{
+    height: 6.5rem;
+    width: 6rem;
+    object-fit: contain;
+}
+
+.hrforst{
+    height: 2px;
+    border:none;
+    width:100vw;
+    box-shadow:0 1px 6px rgba(0, 0, 0, 0.5);
+}
+
+@media(max-width:1024px){
+    .skilldetails{
+        font-size: 16px;
+        width: 50rem;
+    }
+    .skillbar{
+        padding: .5rem 1rem;
+    }
+}
+
+@media(max-width:768px){
+    .makeitnone{
+    display: none;
+    }
+    .skilldetails{
+        width: 40rem;
+    }
+    .skillbarimg{
+        height: 6rem;
+        width: 5rem;
+    }
+    .skillbartext h2{
+        font-size: 1.5rem;
+        line-height: 34px;
+    }
+    .skillbartext p{
+        font-size: .9rem;
+    }
+}
+
+@media(max-width:425px){
+    #skill{
+        max-width: none !important;
+        width: 105%;
+    }
+    .hrforst{
+        position: absolute;
+        top: 56rem;
+        box-shadow:0 4px 6px rgba(0, 0, 0, 0.5);
+    }
+    .navbar{
+        max-width: 96vw;
+    }
+    .skilltitle{
+        font-size: 2.5rem;
+    }
+    .skilldetails{
+        width: 24rem;
+        font-size: 14px;
+    }
+    .skillbars{
+        margin: 0;
+        max-width: 100%;
+    }
+}
+
+@media(max-width:375px){
+    #skill{
+        max-width: none !important;
+        width: 105%;
+    }
+    .skilldetails{
+        width: 20rem;
+    }
+    .skillbar{
+        padding: .8rem 1rem;
+        column-gap: 6px;
+    }
+    .makeitnone{
+        display: none;
+    }
+    .skillbarimg{
+        height: 5rem;
+        width: 4rem;
+    }
+}
+
+@media(max-width:320px){
+    #skill{
+        width: 107vw;
+    }
+}

@@ -1,0 +1,145 @@
+#intro{
+    height: calc(100vh - 5rem);
+    max-width: 90vw;
+    padding: 0 100px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.mainImg{
+    position: absolute;
+    object-fit: cover;
+    top: 3rem;
+    right: 95px;
+    z-index: -1;
+    height: 95%;
+}
+
+.infocontent{
+    height: 100vh;
+    width: 100vw;
+    font-size: 6rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hello{
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.restcontent{
+    color:rgb(255, 50, 50);
+}
+
+.intropara{
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.hirebtn{
+    display: flex;
+    align-items: center;
+    padding: 14px 2rem;
+    border: none;
+    border-radius: 2.5rem;
+    background-color: white;
+    color: black;
+    gap: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.hirebtn p{
+    font-size: 14px;
+    font-weight: 500;
+}
+@media(max-width:1440px){
+    .infocontent{
+        font-size: 5rem;
+    }
+    .hello{
+        font-size: 18px;
+    }
+    .intropara{
+        font-size: 18px;
+    }
+    .hirebtn{
+        padding: 12px 1.5rem;
+        gap: 6px;
+    }
+}
+
+
+@media(max-width:1024px){
+    #intro{
+        padding: 0 40px;
+    }
+    .makeitnone{
+        display: none;
+    }
+    .intropara{
+        width: 30rem;
+    }
+    .mainImg{
+        right: 38px;
+        height: 86vh;
+    }
+    .mycontent{
+        font-size: 4rem;
+    }
+    .hello {
+        font-size: 18px;
+    }
+}
+
+@media(max-width:768px){
+    #intro {
+        padding: 0 20px;
+    }
+    .mainImg {
+        right: 20px;
+    }
+
+}
+@media(max-width:425px){
+    #intro{
+        padding: 0;
+        overflow: visible;
+        max-width: none !important;
+        width: 92%;
+    }
+    .mainImg {
+        height: 86vh;
+        width: 116%;
+        right: -38px;
+        top: 5rem;
+    }
+    .hello{
+        font-size: 16px;
+    }
+    .mycontent{
+        font-size: 3rem;
+    }
+    .intropara{
+        width: 23rem;
+        font-size: 16px;
+    }
+    .hirebtn {
+        padding: 10px 1rem;
+        gap: 4px;
+    }
+}
+
+@media(max-width:375px){
+    .mycontent{
+        font-size: 2.5rem;
+    }
+    .intropara{
+        width: 20rem;
+    }
+}

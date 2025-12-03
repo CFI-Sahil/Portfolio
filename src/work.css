@@ -1,0 +1,115 @@
+#works{
+    overflow: hidden;
+    max-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.port{
+    font-size: 3rem;
+    font-weight: 600;
+    padding-top: 5rem;
+}
+
+.portdetails{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.portfoliopages{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    padding: 3rem;
+    row-gap: 20px;
+    column-gap: 20px;
+}
+
+.mywebpro{
+    object-fit: cover;
+    height: 400px;
+    width: 300px;
+    border-radius: 1rem;
+}
+
+.seemore{
+    display: flex;
+    align-items: center;
+    padding: 10px 2rem;
+    border: none;
+    border-radius: 2.5rem;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+@media(max-width:1024px){
+    .portdetails{
+        font-size: 16px;
+        width: 50rem;
+    }
+    .mywebpro{
+        height: 360px;
+        width: 260px;
+    } 
+}
+
+@media(max-width:768px){
+    .makeitnone{
+        display: none;
+    }
+    .portdetails{
+        width: 40rem;
+    }
+    .mywebpro {
+        height: 300px;
+        width: 200px;
+    }
+}
+
+@media(max-width:425px){
+    #works{
+        width: 105% !important;
+        max-width: none;
+    }
+    .portdetails{
+        width: 24rem;
+        font-size: 14px;
+    }
+    .port{
+        font-size: 2.5rem;
+    }
+    .portfoliopages{
+        display: grid;
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        padding: 3rem;
+        row-gap: 20px;
+        column-gap: 20px;
+    }
+    .mywebpro{
+        height: 340px;
+        width: 270px;
+    }
+}
+
+@media(max-width:375px){
+    #works{
+        max-width: none !important;
+        width: 105%;
+    }
+    .portdetails{
+        width: 20rem;
+    }
+}
+
+@media(max-width:320px){
+    .portfoliopages{
+        padding: 2rem 0;
+    }
+}
